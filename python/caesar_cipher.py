@@ -29,13 +29,3 @@ class CesarCipher(object):
                 encoded_text += plainText[i]
             
         return encoded_text
-
-test_alphabet = list("abcdefghijklmnopqrstuvwxyz")
-string = "The quick brown fox jumps over the lazy dog"
-encoded_string = "Tkh txlfn eurzq ira mxpsv ryhu wkh odcb grj"
-
-cipher = CesarCipher()
-cipher.set_alphabet(test_alphabet)
-cipher.set_shift(3)
-
-print cipher.encode(string)
